@@ -191,3 +191,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .hero {
+    padding: 1rem;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0.2rem;
+  }
+  .hero {
+    padding: 0.5rem;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .sectionTitle {
+    font-size: 1rem;
+  }
+}

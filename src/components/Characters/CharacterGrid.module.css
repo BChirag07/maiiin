@@ -107,3 +107,35 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0.25rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
