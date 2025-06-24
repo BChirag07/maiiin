@@ -1,0 +1,137 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff0000 0%, #ffffff 50%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.8));
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out 0.2s both;
+  transition: color 0.3s ease;
+}
+
+.subtitle:hover {
+  color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: #cccccc;
+}
+
+.endMessage {
+  text-align: center;
+  padding: 2rem;
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: rgba(255, 0, 0, 0.1);
+  border: 2px solid #ff0000;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.noResults {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #cccccc;
+  background: rgba(255, 0, 0, 0.05);
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.noResults h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ff0000;
+}
+
+.noResults p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.error {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ff0000;
+  background: rgba(255, 0, 0, 0.1);
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+}
+
+.error h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.error p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

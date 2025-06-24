@@ -1,0 +1,26 @@
+.select {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+.select option {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .select {
+    min-width: 100px;
+  }
+}
